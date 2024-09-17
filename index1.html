@@ -1,33 +1,116 @@
 <!DOCTYPE html>
 <html>
+
 <head>
- <title></title>
+    <link rel="stylesheet" 
+          href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" 
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" 
+          href=
+"style.css" />
+<link rel="stylesheet" href="gaya.css">
 </head>
 <body>
-<h2>Kirim Email</h2>
-<form method="POST" action="kirim.php">
- <table>
-  <tr>
-   <td>Nama :</td>
-   <td><input type="text" name="nama" size="30"></td>
-  </tr>
-  <tr>
-   <td>Email :</td>
-   <td><input type="email" name="email" size="30"></td>
-  </tr>
-  <tr>
-   <td>Subjek :</td>
-   <td><input type="text" name="subjek" size="30"></td>
-  </tr>
-  <tr>
-   <td>Pesan :</td>
-   <td><textarea name="pesan" cols="32" rows="5"></textarea></td>
-  </tr>
-  <tr>
-   <td></td>
-   <td><input type="submit" name="kirim" value="Kirim"></td>
-  </tr>
- </table> 
-</form>
+     <div id = "content" > <div id = "contentnav" > <nav id = "navmenu" > <ul> <li>         
+                                                   <li>
+                          <a href="index.html">beranda</a>
+
+                        <li>
+                            <a href="info.html">Info</a>
+                        </li>
+                        <li>
+                            <a href="galeri.html">galeri</a>
+                        </li>
+                        <li>
+                            <a href="index1.html">kontak</a>
+                        </li>
+                    </ul>  
+                </nav>
+                            </div>
+            <div id="content-text">
+<h1>Kirim Pesan Melalui email</h1>
+      <section id="last">
+        <!-- heading -->
+        <div class="full">
+            <h3>Kirim Pesan</h3>
+
+            <div class="lt">
+
+                <!-- form starting  -->
+                <form class="form-horizontal" method="post" 
+                      action="contact.php">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <!-- name  -->
+                            <input type="text" class="form-control" 
+                                   id="name" placeholder="NAME" 
+                                   name="name" value="" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <!-- email  -->
+                            <input type="email" class="form-control" 
+                                   id="email" placeholder="EMAIL" 
+                                   name="email"
+                                value="" />
+                        </div>
+                    </div>
+
+                    <!-- message  -->
+                    <textarea class="form-control" rows="10" 
+                              placeholder="MESSAGE" name="message">
+            </textarea>
+
+                    <button class="btn btn-primary send-button" 
+                            id="submit" type="submit" value="SEND">
+                        <i class="fa fa-paper-plane"></i>
+                        <span class="send-text">SEND</span>
+                    </button>
+                    
+                    <form class="form-horizontal" method="post" action="mail.php">
+                    
+
+                </form>
+                <!-- end of form -->
+            </div>
+
+            <!-- Contact information -->
+            <div class="rt">
+                <ul class="contact-list">
+                    <li class="list-item">
+                        <i class="fa fa-map-marker fa-1x">
+                            <span class="contact-text place">
+                                Purwakarta
+                            </span>
+                        </i>
+                    </li>
+
+                    <li class="list-item">
+                        <i class="fa fa-envelope fa-1x">
+                            <span class="contact-text gmail">
+                                <a href="mailto:desamarga23@gmail.com" 
+                                   title="Send me an email">
+                                  desamarga23@gmail.com</a>
+                            </span>
+                        </i>
+                    </li>
+
+                    <li class="list-item">
+                        <i class="fa fa-phone fa-1x">
+                            <span class="contact-text phone">
+                                (+62) 85624566483
+                                
+                            </span>
+                        </i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

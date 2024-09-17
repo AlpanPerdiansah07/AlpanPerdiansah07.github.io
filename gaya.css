@@ -1,3 +1,49 @@
+.header-image {
+  height: 100vh;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+#contentnav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5rem;
+  padding-top: 3rem;
+  padding-right: 3rem;
+}
+
+#navmenu ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+
+#navmenu li {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2.7rem;
+  list-style-type: none;
+}
+
+#navmenu li a {
+  color: #303c4e;
+  text-decoration: none;
+}
+
+#navmenu li a:hover {
+  color: #7fdbbb;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
 #last{ 
     width: 100%; 
     height: auto; 
